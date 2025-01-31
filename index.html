@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Tejas</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Hobbies">Hobbies</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <img src="moon.png" id="icon" onclick="toggleDarkMode()"/>
+        </ul>
+      </div>    
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Tejas</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+          <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="WhatsApp Image 2024-12-28 at 11.48.02 PM.jpeg" alt="Tejas picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Tejas</h1>
+        <p class="section__text__p2"> Bca student</p>
+        
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="photo.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="education.jpg"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>ST JOSEPH FIRST GRADE COLLEGE</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="music.png"
+                alt="music icon"
+                class="icon"
+              />
+              <h3>favorite songs</h3>
+              <audio id="audio1" controls>
+               <source src="Dil_Bechara.mp3"> 
+              </audio>
+            </div>
+            
+          <div class="text-container">
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.jpg"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Hobbies'"
+      />
+    </section>
+    <section id="hobbies">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Hobbies</h1>
+      <div class="hobbies-details-container">
+        <div class="about-containers">
+          <div class="section__pic-container">
+            <img
+              src="hanball image.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">HANDBALL</h2>
+            <div class="video">
+              <video id="video1"controls>
+                <source src="VID_20241231_041110_863.mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.jpg"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+          
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Explore My Internship</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container">
+            <h2 class="experience-sub-title">PROJECT 1</h2>
+            <div class="section__text2">
+            <h6 class="title4">ASSISTENT LUFFY</h6>
+            </div>
+            <div class="section__pic-container5">
+              <img
+                src="luffy (2).gif"
+                class="project-pic"
+                />
+                <div class="project-info-upper-container">
+                  <div class="project-container">
+                    <p><a href="https://tejas0272.github.io/assistent/">VIEW</a></p>
+                </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="mail.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:tejasbeeraiah123@gmail.com">tejasbeeraiah123@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
